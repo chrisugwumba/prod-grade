@@ -22,9 +22,11 @@ jobs:
   terraform-plan:
     name: Terraform Plan
     runs-on: ubuntu-latest
-
+    
+    environment: 
+      name: ${{ inputs .environment }}
     defaults:
-      run:
+      run: 
         working-directory: envs/${{ inputs.environment }}
 
     outputs:
