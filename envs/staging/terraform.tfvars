@@ -1,2 +1,3 @@
+# This is the range of VPC and Submnet cidr block 
 vpc_cidr     = "10.0.0.0/16"
 subnets_cidr = ["10.0.1.0/24", "10.0.2.0/24"]
