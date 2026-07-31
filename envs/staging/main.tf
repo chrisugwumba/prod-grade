@@ -1,3 +1,5 @@
+
+# This is my stagging environment vpc declaration
 module "vpc" {
   source = "../../modules/vpc"
 
