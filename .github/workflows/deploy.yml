@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     
     environment: 
-      name: ${{ inputs .environment }}
+      name: ${{ inputs.environment }}
     defaults:
       run: 
         working-directory: envs/${{ inputs.environment }}
