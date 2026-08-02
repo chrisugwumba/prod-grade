@@ -1,3 +1,4 @@
+# Thsi locals is for the prod environment alone
 locals {
   environment = "prod"
 
