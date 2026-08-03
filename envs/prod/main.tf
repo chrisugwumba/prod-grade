@@ -4,5 +4,5 @@ module "vpc" {
   subnets_cidr = var.subnets_cidr
 
   environment = local.environment
-  tags = local.prod_tags
+  tags        = local.prod_tags
 }

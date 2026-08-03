@@ -1,3 +1,4 @@
+# For this project, i am using three separate files for the variable declaration for the project 
 variable "vpc_cidr" {
   type = string
 }
