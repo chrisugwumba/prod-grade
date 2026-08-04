@@ -14,3 +14,18 @@ variable "subnet_names" {
     "PublicSubnet2"
   ]
 }
+
+variable "instance_type" {
+  description = "EC2 instance type for this environment"
+  type        = string
+}
+
+variable "ec2_names" {
+  description = "Names of the EC2 instances"
+  type        = list(string)
+}
+
+variable "enable_deletion_protection" {
+  type = bool
+}
+
