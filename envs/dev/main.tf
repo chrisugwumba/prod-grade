@@ -19,8 +19,8 @@ module "sg" {
 module "ec2" {
   source = "../../modules/ec2"
 
-  subnets      = module.vpc.subnet_id
-  sg_id        = module.sg.sg_id
+  subnets       = module.vpc.subnet_id
+  sg_id         = module.sg.sg_id
   instance_type = var.instance_type
   ec2_names     = var.ec2_names
 
@@ -31,7 +31,7 @@ module "ec2" {
 
 # This is the provisioning of the Application Loadbalancer for the project 
 module "alb" {
-  source = "../../modules/alb"
+  source    = "../../modules/alb"
   sg_id     = module.sg.sg_id
   subnets   = module.vpc.subnet_id
   vpc_id    = module.vpc.vpc_id
