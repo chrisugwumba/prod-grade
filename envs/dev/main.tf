@@ -28,6 +28,8 @@ module "ec2" {
   tags        = var.tags
 }
 
+
+# This is the provisioning of the Application Loadbalancer for the project 
 module "alb" {
   source = "../../modules/alb"
   sg_id     = module.sg.sg_id
